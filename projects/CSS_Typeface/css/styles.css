@@ -1,0 +1,1390 @@
+/*
+	Contents
+		Sections
+			General/Page
+			Row Positioning
+			Column Positioning
+			Standard (Horizontal/Vertical) Construction Lines
+			Special Letter-Based (Diagonal/Curve) Construction Lines
+			Standard Fill Segments
+			Special Letter-Based Fill Segments
+			Visibility Settings for jQuery
+*/
+
+/*
+	General/Page
+*/
+.page {
+	width: 100vw;
+	height: 4000px;
+	background-color: #E6E7E8;
+	position: absolute;
+	left: 0;
+	top: 0;
+	overflow: hidden;
+}
+
+.page2 {
+	width: 100vw;
+	height: 4000px;
+	background-color: #E6E7E8;
+	position: absolute;
+	left: 0;
+	top: 0;
+	overflow: hidden;
+	z-index: 30;
+}
+
+.wrapper {
+    width: 100vw; 
+    height: 53.33vw; /* height:width ratio = 320/600 = .5333  */
+    background: #E6E7E8;
+    max-height: 100vh;
+    max-width: 187.5vh; /* 600/320 = 1.875 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.twrap {
+	width: 80%;
+	height: 90%;
+	margin: auto;
+	position: absolute;
+	top: 0; bottom: 0;
+	left: 0; right:0;
+	background-color: #E6E7E8;
+}
+
+.lines {
+	z-index: 10;
+}
+
+.letter {
+	width: 3.21%;
+	height: 6.41%;
+	position: absolute;
+	z-index: 1;
+}
+
+.letter2 {
+	width: 8.01%;
+	height: 16.03%;
+	position: absolute;
+	z-index: 1;
+}
+
+/*
+	Row Positioning
+*/
+.row0 {
+	top: 0%;
+}
+
+.row1 {
+	top: 15.60%;
+}
+
+.row2 {
+	top: 24.15%;
+}
+
+.row3 {
+	top: 32.69%;
+}
+
+.row4 {
+	top: 41.24%;
+}
+
+.row5 {
+	top: 49.79%;
+}
+
+.row6 {
+	top: 58.33%;
+}
+
+.row7 {
+	top: 66.88%;
+}
+
+.row8 {
+	top: 75.43%;
+}
+
+.row9 {
+	top: 83.97%;
+}
+
+.row10 {
+	top: 95%;
+}
+
+/*
+	Column Positioning
+*/
+.cola {
+	left: 0.32%;
+}
+
+.colb {
+	left: 4.17%;
+}
+
+.colc {
+	left: 8.01%;
+}
+
+.cold {
+	left: 11.86%;
+}
+
+.cole {
+	left: 15.71%;
+}
+
+.colf {
+	left: 19.55%;
+}
+
+.colg {
+	left: 23.40%;
+}
+
+.colh {
+	left: 27.24%;
+}
+
+.coli {
+	left: 31.09%;
+}
+
+.colj {
+	left: 34.94%;
+}
+
+.colk {
+	left: 38.78%;
+}
+
+.coll {
+	left: 42.63%;
+}
+
+.colm {
+	left: 46.47%;
+}
+
+.coln {
+	left: 50.32%;
+}
+
+.colo {
+	left: 54.17%;
+}
+
+.colp {
+	left: 58.01%;
+}
+
+.colq {
+	left: 61.86%;
+}
+
+.colr {
+	left: 65.71%;
+}
+
+.cols{
+	left: 69.55%;
+}
+
+.colt {
+	left: 73.40%;
+}
+
+.colu {
+	left: 77.24%;
+}
+
+.colv {
+	left: 81.09%;
+}
+
+.colw {
+	left: 84.94%;
+}
+
+.colx {
+	left: 88.78%;
+}
+
+.coly {
+	left: 92.63%;
+}
+
+.colz {
+	left: 96.47%;
+}
+
+/* Page 2 Row Positioning */
+
+.row21 {
+	top: 17.20%;
+}
+
+.row22 {
+	top: 38.57%;
+}
+
+.row23 {
+	top: 59.94%;
+}
+
+.row24 {
+	top: 81.30%;
+}
+
+/* Page 2 Column Positioning */
+
+.col2a {
+	left: 0.80%;
+}
+
+.col2b {
+	left: 15.87%;
+}
+
+.col2c {
+	left: 30.93%;
+}
+
+.col2d {
+	left: 45.99%;
+}
+
+.col2e {
+	left: 61.06%;
+}
+
+.col2f {
+	left: 76.12%;
+}
+
+.col2g {
+	left: 91.19%;
+}
+
+/*
+	Standard (Horizontal/Vertical) Construction Lines
+*/
+.onehoroutlines {
+	width: 1000%; 
+	height: 6.41%; 
+	margin-top: -2px;
+	margin-left: -2px;
+	border-style: solid;
+	border-color: #A7A9AC;
+	border-width: 2px;
+	position: absolute;
+	left: -12.5%;
+	z-index: 12;
+}
+
+.onehoroffsetlines {
+	width: 100%; 
+	height: 83.33%; 
+	margin-top: -1px;
+	margin-left: -1px;
+	border-style: solid;
+	border-color: #A7A9AC;
+	border-width: 1px;
+	position: absolute;
+	left: 0%;
+	top: 8.33%;
+	z-index: 12;
+}
+
+.onehorcentlines {
+	width: 100%; 
+	height: 10%; 
+	margin-top: -1px;
+	margin-left: -1px;
+	border-style: solid;
+	border-color: #A7A9AC;
+	border-width: 1px;
+	position: absolute;
+	left: 0%;
+	top: 40%;
+	z-index: 12;
+}
+
+.oneveroutlines {
+	width: 3.21%; 
+	height: 1000%; 
+	margin-top: -2px;
+	margin-left: -2px;
+	border-style: solid;
+	border-color: #A7A9AC;
+	border-width: 2px;
+	border-bottom-style: none;
+	position: absolute;
+	top: -5.56%;
+	z-index: 12;
+}
+
+.oneveroffsetlines {
+	width: 80%; 
+	height: 100%; 
+	margin-top: -1px;
+	margin-left: -1px;
+	border-style: solid;
+	border-color: #A7A9AC;
+	border-width: 1px;
+	border-bottom-style: none;
+	position: absolute;
+	top: 0%;
+	left: 10%;
+	z-index: 12;
+}
+
+.onevercentlines {
+	width: 12.5%; 
+	height: 100%; 
+	margin-top: -1px;
+	margin-left: -1px;
+	border-style: solid;
+	border-color: #A7A9AC;
+	border-width: 1px;
+	border-bottom-style: none;
+	position: absolute;
+	top: 0%;
+	left: 50%;
+	z-index: 12;
+}
+
+.horoutlines {
+	width: 1000%; 
+	height: 6.41%; 
+	margin-top: -2px;
+	margin-left: -2px;
+	border-style: solid;
+	border-color: #A7A9AC;
+	border-width: 2px;
+	position: absolute;
+	left: -12.5%;
+	z-index: 12;
+}
+
+.horoffsetlines {
+	width: 100%; 
+	height: 83.33%; 
+	margin-top: -1px;
+	margin-left: -1px;
+	border-style: solid;
+	border-color: #A7A9AC;
+	border-width: 1px;
+	position: absolute;
+	left: 0%;
+	top: 8.33%;
+	z-index: 12;
+}
+
+.horcentlines {
+	width: 100%; 
+	height: 10%; 
+	margin-top: -1px;
+	margin-left: -1px;
+	border-style: solid;
+	border-color: #A7A9AC;
+	border-width: 1px;
+	position: absolute;
+	left: 0%;
+	top: 40%;
+	z-index: 12;
+}
+
+.veroutlines {
+	width: 3.21%; 
+	height: 1000%; 
+	margin-top: -2px;
+	margin-left: -2px;
+	border-style: solid;
+	border-color: #A7A9AC;
+	border-width: 2px;
+	border-bottom-style: none;
+	position: absolute;
+	top: -5.56%;
+	z-index: 12;
+}
+
+.veroffsetlines {
+	width: 80%; 
+	height: 100%; 
+	margin-top: -1px;
+	margin-left: -1px;
+	border-style: solid;
+	border-color: #A7A9AC;
+	border-width: 1px;
+	border-bottom-style: none;
+	position: absolute;
+	top: 0%;
+	left: 10%;
+	z-index: 12;
+}
+
+.vercentlines {
+	width: 12.5%; 
+	height: 100%; 
+	margin-top: -1px;
+	margin-left: -1px;
+	border-style: solid;
+	border-color: #A7A9AC;
+	border-width: 1px;
+	border-bottom-style: none;
+	position: absolute;
+	top: 0%;
+	left: 50%;
+	z-index: 12;
+}
+
+.horoutlines2 {
+	width: 1000%; 
+	height: 16.03%; 
+	margin-top: -2px;
+	margin-left: -2px;
+	border-style: solid;
+	border-color: #A7A9AC;
+	border-width: 2px;
+	position: absolute;
+	left: -12.5%;
+	z-index: 12;
+	visibility: visible;
+}
+
+.veroutlines2 {
+	width: 8.01%; 
+	height: 1000%; 
+	margin-top: -2px;
+	margin-left: -2px;
+	border-style: solid;
+	border-color: #A7A9AC;
+	border-width: 2px;
+	border-bottom-style: none;
+	position: absolute;
+	top: -5.56%;
+	z-index: 12;
+}
+
+/*
+	Special Letter-Based (Diagonal/Curve) Construction Lines
+*/
+
+.linesupperfrontcircle {
+	width: 80%;
+	height: 66.67%;
+	position: absolute;
+	left: 10%;
+	top: 8.33%;
+	border-radius: 50%;
+	border-style: solid;
+	border-color: #A7A9AC;
+	border-width: 1px;
+	margin-top: -1px;
+	margin-left: -1px;
+	z-index: 12;
+}
+
+.linesupperbackcircle {
+	width: 100%;
+	height: 83.33%;
+	position: absolute;
+	left: 0%;
+	top: 0%;
+	border-radius: 50%;
+	border-style: solid;
+	border-color: #A7A9AC;
+	border-width: 1px;
+	margin-top: -1px;
+	margin-left: -1px;
+	z-index: 11;
+}
+
+.lineslowerfrontcircle {
+	width: 80%;
+	height: 66.67%;
+	position: absolute;
+	left: 10%;
+	bottom: 8.33%;
+	border-radius: 50%;
+	border-style: solid;
+	border-color: #A7A9AC;
+	border-width: 1px;
+	margin-bottom: -1px;
+	margin-left: -1px;
+	z-index: 12;
+}
+
+.lineslowerbackcircle {
+	width: 100%;
+	height: 83.33%;
+	position: absolute;
+	left: 0%;
+	bottom: 0%;
+	border-radius: 50%;
+	border-style: solid;
+	border-color: #A7A9AC;
+	border-width: 1px;
+	margin-bottom: -1px;
+	margin-left: -1px;
+	z-index: 11;
+}
+
+.diaglines {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0%
+	left: 0%;
+}
+
+.linesadiagleft {
+	width: 10%;
+	height: 10000%;
+	position: absolute;
+	transform-origin: left bottom;
+	left: -5000%;
+	bottom: -10000%;
+	transform: skewX(-21.62deg);
+	-ms-transform: skewX(-21.62deg);
+	-webkit-transform: skewX(-21.62deg);
+	-o-transform: skewX(-21.62deg);
+	border-style: solid;
+	border-width: 1px;
+	margin-left: -1px;
+	margin-bottom: -1px;
+	border-color: #A7A9AC;
+	z-index: 12;
+}
+
+.linesadiagright {
+
+}
+
+
+
+/*
+	Standard Fill Segments
+*/
+
+.verleftfull {
+	background-color: black;
+	width: 10%;
+	height: 100%;
+	position: absolute;
+	left: 0%;
+	top: 0%;
+	z-index: 6;
+}
+
+.verleftmid {
+	background-color: black;
+	width: 10%;
+	height: 16.67%;
+	position: absolute;
+	left: 0%;
+	top: 41.67%;
+	z-index: 6;
+}
+
+.verlefttophalf {
+	background-color: black;
+	width: 10%;
+	height: 58.33%;
+	position: absolute;
+	left: 0%;
+	top: 0%;
+	z-index: 6;
+}
+
+.vercentfull {
+	background-color: black;
+	width: 10%;
+	height: 100%;
+	position: absolute;
+	left: 50%;
+	top: 0%;
+	z-index: 6;
+}
+
+.vercenttophalf {
+	background-color: black;
+	width: 10%;
+	height: 50%;
+	position: absolute;
+	left: 50%;
+	top: 0%;
+	z-index: 6;
+}
+
+.vercentbothalf {
+	background-color: black;
+	width: 10%;
+	height: 50%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	z-index: 6;
+}
+
+.verrightfull {
+	background-color: black;
+	width: 10%;
+	height: 100%;
+	position: absolute;
+	right: 0%;
+	top: 0%;
+	z-index: 6;
+}
+
+.verrightmid {
+	background-color: black;
+	width: 10%;
+	height: 16.67%;
+	position: absolute;
+	right: 0%;
+	top: 41.67%;
+	z-index: 6;
+}
+
+.verrightbothalf {
+	background-color: black;
+	width: 10%;
+	height: 50%;
+	position: absolute;
+	right: 0%;
+	bottom: 0%;
+	z-index: 6;
+}
+
+.verrighttophalf {
+	background-color: black;
+	width: 10%;
+	height: 58.33%;
+	position: absolute;
+	right: 0%;
+	top: 0%;
+	z-index: 6;
+}
+
+.hortopfull {
+	background-color: black;
+	width: 100%;
+	height: 8.33%;
+	position: absolute;
+	left: 0%;
+	top: 0%;
+	z-index: 6;
+}
+
+.hortoplefthalf {
+	background-color: black;
+	width: 50%;
+	height: 8.33%;
+	position: absolute;
+	left: 0%;
+	top: 0%;
+	z-index: 6;
+}
+
+.hortoprighthalf {
+	background-color: black;
+	width: 50%;
+	height: 8.33%;
+	position: absolute;
+	left: 50%;
+	top: 0%;
+	z-index: 6;
+}
+
+.horcentfull {
+	background-color: black;
+	width: 100%;
+	height: 8.33%;
+	position: absolute;
+	left: 0%;
+	top: 41.67%;
+	z-index: 6;
+}
+
+.horcentlefthalf {
+	background-color: black;
+	width: 60%;
+	height: 8.33%;
+	position: absolute;
+	left: 0%;
+	top: 41.67%;
+	z-index: 6;
+}
+
+.horcentrighthalf {
+	background-color: black;
+	width: 50%;
+	height: 8.33%;
+	position: absolute;
+	right: 0%;
+	top: 41.67%;
+	z-index: 6;
+}
+
+.horbotfull {
+	background-color: black;
+	width: 100%;
+	height: 8.33%;
+	position: absolute;
+	left: 0%;
+	bottom: 0%;
+	z-index: 6;
+}
+
+.horbotlefthalf {
+	background-color: black;
+	width: 50%;
+	height: 8.33%;
+	position: absolute;
+	left: 0%;
+	bottom: 0%;
+	z-index: 6;
+}
+
+.horbotrighthalf {
+	background-color: black;
+	width: 50%;
+	height: 8.33%;
+	position: absolute;
+	right: 0%;
+	bottom: 0%;
+	z-index: 6;
+}
+
+/* CURVES */
+
+.upperfrontcircle {
+	background-color: #E6E7E8;
+	width: 80%;
+	height: 66.67%;
+	position: absolute;
+	left: 10%;
+	top: 8.33%;
+	border-radius: 50%;
+	z-index: 3;
+}
+
+.lowerfrontcircle {
+	background-color: #E6E7E8;
+	width: 80%;
+	height: 66.67%;
+	position: absolute;
+	left: 10%;
+	bottom: 8.33%;
+	border-radius: 50%;
+	z-index: 3;
+}
+
+.rec1 {
+	background-color: #E6E7E8;
+	width: 100%;
+	height: 16.67%;
+	position: absolute;
+	left: 0%;
+	top: 41.67%;
+	z-index: 4;
+}
+
+.rec2 {
+	background-color: #E6E7E8;
+	width: 50%;
+	height: 41.67%;
+	position: absolute;
+	z-index: 4;
+}
+
+.ul {
+	top: 0%;
+	left: 0%;
+}
+
+.ur {
+	top: 0%;
+	left: 50%;
+}
+
+.ll {
+	bottom: 0%;
+	left: 0%;
+}
+
+.lr {
+	bottom: 0%;
+	left: 50%;
+}
+
+.upperbackcircle {
+	background-color: black;
+	width: 100%;
+	height: 83.33%;
+	position: absolute;
+	left: 0%;
+	top: 0%;
+	border-radius: 50%;
+	z-index: 2;
+}
+
+.lowerbackcircle {
+	background-color: black;
+	width: 100%;
+	height: 83.33%;
+	position: absolute;
+	left: 0%;
+	bottom: 0%;
+	border-radius: 50%;
+	z-index: 2;
+}
+
+/*
+	Special Letter-Based Fill Segments
+*/
+
+.adiagleft {
+	background-color: black;
+	width: 10%;
+	height: 100%;
+	position: absolute;
+	left: 0%;
+	top: 0%;
+	transform-origin: left bottom;
+	transform: skewX(-21.62deg);
+	-ms-transform: skewX(-21.62deg);
+	-webkit-transform: skewX(-21.62deg);
+	-o-transform: skewX(-21.62deg);
+	z-index: 6;
+}
+
+.adiagright {
+	background-color: black;
+	width: 10%;
+	height: 100%;
+	position: absolute;
+	right: 0%;
+	top: 0%;
+	transform-origin: right bottom;
+	transform: skewX(18.43deg);
+	-ms-transform: skewX(18.43deg);
+	-webkit-transform: skewX(18.43deg);
+	-o-transform: skewX(18.43deg);
+	z-index: 6;
+}
+
+.ahorcent {
+	background-color: black;
+	width: 35%;
+	height: 8.33%;
+	position: absolute;
+	left: 35%;
+	top: 41.67%;
+	z-index: 6;
+}
+
+.kdiagtop {
+	background-color: black;
+	width: 10%;
+	height: 50%;
+	position: absolute;
+	right: 0%;
+	top: 0%;
+	transform-origin: right top;
+	transform: skewX(-33.69deg);
+	-ms-transform: skewX(-33.69deg);
+	-webkit-transform: skewX(-33.69deg);
+	-o-transform: skewX(-33.69deg);
+	z-index: 6;
+}
+
+.kdiagbot {
+	background-color: black;
+	width: 10%;
+	height: 50%;
+	position: absolute;
+	right: 0%;
+	bottom: 0%;
+	transform-origin: right bottom;
+	transform: skewX(33.69deg);
+	-ms-transform: skewX(33.69deg);
+	-webkit-transform: skewX(33.69deg);
+	-o-transform: skewX(33.69deg);
+	z-index: 6;
+}
+
+.mdiagleft {
+	background-color: black;
+	width: 10%;
+	height: 50%;
+	position: absolute;
+	left: 0%;
+	top: 0%;
+	transform-origin: left top;
+	transform: skewX(39.81deg);
+	-ms-transform: skewX(39.81deg);
+	-webkit-transform: skewX(39.81deg);
+	-o-transform: skewX(39.81deg);
+	z-index: 6;
+}
+
+.mdiagright {
+	background-color: black;
+	width: 10%;
+	height: 50%;
+	position: absolute;
+	right: 0%;
+	top: 0%;
+	transform-origin: right top;
+	transform: skewX(-33.69deg);
+	-ms-transform: skewX(-33.69deg);
+	-webkit-transform: skewX(-33.69deg);
+	-o-transform: skewX(-33.69deg);
+	z-index: 6;
+}
+
+.ndiag {
+	background-color: black;
+	width: 10%;
+	height: 100%;
+	position: absolute;
+	right: 0%;
+	top: 0%;
+	transform-origin: right bottom;
+	transform: skewX(36.87deg);
+	-ms-transform: skewX(36.87deg);
+	-webkit-transform: skewX(36.87deg);
+	-o-transform: skewX(36.87deg);
+	z-index: 6;
+}
+
+.qdiag {
+	background-color: black;
+	width: 10%;
+	height: 50%;
+	position: absolute;
+	right: 0%;
+	bottom: 0%;
+	transform-origin: right bottom;
+	transform: skewX(33.69deg);
+	-ms-transform: skewX(33.69deg);
+	-webkit-transform: skewX(33.69deg);
+	-o-transform: skewX(33.69deg);
+	z-index: 6;
+}
+
+.rdiag {
+	background-color: black;
+	width: 10%;
+	height: 50%;
+	position: absolute;
+	right: 0%;
+	bottom: 0%;
+	transform-origin: right bottom;
+	transform: skewX(33.69deg);
+	-ms-transform: skewX(33.69deg);
+	-webkit-transform: skewX(33.69deg);
+	-o-transform: skewX(33.69deg);
+	z-index: 6;
+}
+
+.vdiagleft {
+	background-color: black;
+	width: 10%;
+	height: 100%;
+	position: absolute;
+	left: 0%;
+	top: 0%;
+	transform-origin: left top;
+	transform: skewX(21.62deg);
+	-ms-transform: skewX(21.62deg);
+	-webkit-transform: skewX(21.62deg);
+	-o-transform: skewX(21.62deg);
+	z-index: 6;
+}
+
+.vdiagright {
+	background-color: black;
+	width: 10%;
+	height: 100%;
+	position: absolute;
+	right: 0%;
+	top: 0%;
+	transform-origin: right top;
+	transform: skewX(-18.43deg);
+	-ms-transform: skewX(-18.43deg);
+	-webkit-transform: skewX(-18.43deg);
+	-o-transform: skewX(-18.43deg);
+	z-index: 6;
+}
+
+.wdiagleft {
+	background-color: black;
+	width: 10%;
+	height: 50%;
+	position: absolute;
+	left: 0%;
+	bottom: 0%;
+	transform-origin: left bottom;
+	transform: skewX(-39.81deg);
+	-ms-transform: skewX(-39.81deg);
+	-webkit-transform: skewX(-39.81deg);
+	-o-transform: skewX(-39.81deg);
+	z-index: 6;
+}
+
+.wdiagright {
+	background-color: black;
+	width: 10%;
+	height: 50%;
+	position: absolute;
+	right: 0%;
+	bottom: 0%;
+	transform-origin: right bottom;
+	transform: skewX(33.69deg);
+	-ms-transform: skewX(33.69deg);
+	-webkit-transform: skewX(33.69deg);
+	-o-transform: skewX(33.69deg);
+	z-index: 6;
+}
+
+.xdiagtopleft {
+	background-color: black;
+	width: 10%;
+	height: 50%;
+	position: absolute;
+	left: 0%;
+	top: 0%;
+	transform-origin: left top;
+	transform: skewX(39.81deg);
+	-ms-transform: skewX(39.81deg);
+	-webkit-transform: skewX(39.81deg);
+	-o-transform: skewX(39.81deg);
+	z-index: 6;
+}
+
+.xdiagtopright {
+	background-color: black;
+	width: 10%;
+	height: 50%;
+	position: absolute;
+	right: 0%;
+	top: 0%;
+	transform-origin: right top;
+	transform: skewX(-33.69deg);
+	-ms-transform: skewX(-33.69deg);
+	-webkit-transform: skewX(-33.69deg);
+	-o-transform: skewX(-33.69deg);
+	z-index: 6;
+}
+
+.xdiagbotleft {
+	background-color: black;
+	width: 10%;
+	height: 50%;
+	position: absolute;
+	left: 0%;
+	bottom: 0%;
+	transform-origin: left bottom;
+	transform: skewX(-39.81deg);
+	-ms-transform: skewX(-39.81deg);
+	-webkit-transform: skewX(-39.81deg);
+	-o-transform: skewX(-39.81deg);
+	z-index: 6;
+}
+
+.xdiagbotright {
+	background-color: black;
+	width: 10%;
+	height: 50%;
+	position: absolute;
+	right: 0%;
+	bottom: 0%;
+	transform-origin: right bottom;
+	transform: skewX(33.69deg);
+	-ms-transform: skewX(33.69deg);
+	-webkit-transform: skewX(33.69deg);
+	-o-transform: skewX(33.69deg);
+	z-index: 6;
+}
+
+.ydiagleft {
+	background-color: black;
+	width: 10%;
+	height: 50%;
+	position: absolute;
+	left: 0%;
+	top: 0%;
+	transform-origin: left top;
+	transform: skewX(39.81deg);
+	-ms-transform: skewX(39.81deg);
+	-webkit-transform: skewX(39.81deg);
+	-o-transform: skewX(39.81deg);
+	z-index: 6;
+}
+
+.ydiagright {
+	background-color: black;
+	width: 10%;
+	height: 50%;
+	position: absolute;
+	right: 0%;
+	top: 0%;
+	transform-origin: right top;
+	transform: skewX(-33.69deg);
+	-ms-transform: skewX(-33.69deg);
+	-webkit-transform: skewX(-33.69deg);
+	-o-transform: skewX(-33.69deg);
+	z-index: 6;
+}
+
+.zdiag {
+	background-color: black;
+	width: 10%;
+	height: 83.33%;
+	position: absolute;
+	right: 0%;
+	top: 8.33%;
+	transform-origin: right top;
+	transform: skewX(-42.27deg);
+	-ms-transform: skewX(-42.27deg);
+	-webkit-transform: skewX(-42.27deg);
+	-o-transform: skewX(-42.27deg);
+	z-index: 6;
+}
+
+/* PUNCTUATION */
+
+.period {
+	background-color: black;
+	width: 10%;
+	height: 8.33%;
+	position: absolute;
+	left: 0%;
+	bottom: 0%;
+	z-index: 6;
+}
+
+.comma {
+	background-color: black;
+	width: 10%;
+	height: 25%;
+	position: absolute;
+	left: 0%;
+	bottom: 0%;
+	z-index: 6;
+}
+
+.colontop {
+	background-color: black;
+	width: 10%;
+	height: 8.33%;
+	position: absolute;
+	left: 0%;
+	top: 41.67%;
+	z-index: 6;
+}
+
+/*
+	Visibility Settings for jQuery
+*/
+
+
+.onehoroutlines, .oneveroutlines, 
+.onehoroffsetlines, .oneveroffsetlines, 
+.onehorcentlines, .onevercentlines, 
+.horoutlines, .veroutlines, 
+.horoffsetlines, .veroffsetlines, 
+.horcentlines, .vercentlines, 
+.curvelines, /*.diaglines, */
+.curves, 
+.diasmall, .diabig, 
+.horcent, .vercent, 
+.hortop, .horbot, 
+.verright, .verleft {
+/*	visibility: hidden;
+*/	-moz-opacity: 0;
+	filter: alpha(opacity=0);
+	opacity: 0;
+}
+/*
+.lines {
+	visibility: visible;
+}*/
+
+.row10, .row0, .page2 {
+	opacity: 0;
+}
+
+
+/* OLD VISIBILITY CODE
+
+
+/*
+.oneveroutlines {
+	visibility: hidden;
+	-moz-opacity: 0;
+	filter: alpha(opacity=0);
+	opacity: 0;
+}
+
+.onehoroffsetlines {
+	visibility: hidden;
+	-moz-opacity: 0;
+	filter: alpha(opacity=0);
+	opacity: 0;
+}
+
+.oneveroffsetlines {
+	visibility: hidden;
+	-moz-opacity: 0;
+	filter: alpha(opacity=0);
+	opacity: 0;
+}
+
+.onehorcentlines {
+	visibility: hidden;
+	-moz-opacity: 0;
+	filter: alpha(opacity=0);
+	opacity: 0;
+}
+
+.onevercentlines {
+	visibility: hidden;
+	-moz-opacity: 0;
+	filter: alpha(opacity=0);
+	opacity: 0;
+}
+
+.horoutlines {
+	visibility: hidden;
+	-moz-opacity: 0;
+	filter: alpha(opacity=0);
+	opacity: 0;
+}
+
+.veroutlines {
+	visibility: hidden;
+	-moz-opacity: 0;
+	filter: alpha(opacity=0);
+	opacity: 0;
+}
+
+.horoffsetlines {
+	visibility: hidden;
+	-moz-opacity: 0;
+	filter: alpha(opacity=0);
+	opacity: 0;
+}
+
+.veroffsetlines {
+	visibility: hidden;
+	-moz-opacity: 0;
+	filter: alpha(opacity=0);
+	opacity: 0;
+}
+.horcentlines {
+	visibility: hidden;
+	-moz-opacity: 0;
+	filter: alpha(opacity=0);
+	opacity: 0;
+}
+
+.vercentlines {
+	visibility: hidden;
+	-moz-opacity: 0;
+	filter: alpha(opacity=0);
+	opacity: 0;
+}
+
+.curvelines {
+	visibility: hidden;
+	-moz-opacity: 0;
+	filter: alpha(opacity=0);
+	opacity: 0;
+}
+
+.diaglines {
+	visibility: hidden;
+	-moz-opacity: 0;
+	filter: alpha(opacity=0);
+	opacity: 0;
+}
+
+
+.curves {
+	visibility: hidden;
+	-moz-opacity: 0;
+	filter: alpha(opacity=0);
+	opacity: 0;
+}
+
+.diasmall {
+	visibility: hidden;
+	-moz-opacity: 0;
+	filter: alpha(opacity=0);
+	opacity: 0;
+}
+
+.diabig {
+	visibility: hidden;
+	-moz-opacity: 0;
+	filter: alpha(opacity=0);
+	opacity: 0;
+}
+
+.horcent {
+	visibility: hidden;
+	-moz-opacity: 0;
+	filter: alpha(opacity=0);
+	opacity: 0;
+}
+
+.vercent {
+	visibility: hidden;
+	-moz-opacity: 0;
+	filter: alpha(opacity=0);
+	opacity: 0;
+}
+
+.hortop {
+	visibility: hidden;
+	-moz-opacity: 0;
+	filter: alpha(opacity=0);
+	opacity: 0;
+}
+
+.horbot {
+	visibility: hidden;
+	-moz-opacity: 0;
+	filter: alpha(opacity=0);
+	opacity: 0;
+}
+
+.verright {
+	visibility: hidden;
+	-moz-opacity: 0;
+	filter: alpha(opacity=0);
+	opacity: 0;
+}
+
+.verleft {
+	visibility: hidden;
+	-moz-opacity: 0;
+	filter: alpha(opacity=0);
+	opacity: 0;
+}
